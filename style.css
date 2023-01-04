@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+html{
+    height: 100%;
+    background-image: linear-gradient(white,rgb(84, 228, 185));
+}
+nav ul {
+    list-style-type: none;
+}
+
+.logo img {
+    height: 2.5rem;
+}
+
+.title {
+    margin-left: 15px;
+}
+
+nav {
+    background-color: rgb(59, 7, 108);
+    color: white;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding: 0px 12px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container :hover {
+    background-color: rgb(228, 218, 228);
+}
+
+.textbox {
+    font-weight: bolder;
+}
+
+.gameContainer {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.gif {
+    height: 120px;
+}
+
+.gameinfo {
+    font-size: larger;
+    padding: 0px 35px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.font-change {
+    font-family: 'Yeon Sung', cursive;
+}
+
+.gif {
+    width: 0;
+    margin-top: 60px;
+    margin-left: 40px;
+    transition: width 0.2s ease-in-out;
+    animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+@media screen and (max-width:1300px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameinfo {
+        margin-top: 30px;
+    }
+}
+
+#reset {
+    font-family: 'Yeon Sung', cursive;
+    margin-left: 15px;
+    translate: 0px -3px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px;
+}
+
+#reset:hover {
+    background-color: white;
+    border-color: white;
+}
+
+.line {
+    /* left:0; */
+    width: 0;
+    height: 1.5px;
+    position: absolute;
+    background-color: red;
+}
